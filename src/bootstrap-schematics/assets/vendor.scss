@@ -1,0 +1,18 @@
+/* Imported libraries styles and overrides
+-------------------------------------------------- */
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "sidebar";
+
+$modal-header-bg: map-get($theme-colors, "info") !default;
+.table .thead-light th, .table .thead-dark th {
+  font-weight: 500;
+}
+.modal .modal-header {
+  border-bottom: 1px solid transparent;
+  background-color: $modal-header-bg;
+  .modal-title, .close {
+    color: white;
+    opacity: 1;
+  }
+}

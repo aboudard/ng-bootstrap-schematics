@@ -1,0 +1,41 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {  
+    "hello12": {
+      "description": "A blank schematic.",
+      "factory": "./hello12/index#hello12"
+    },
+    "ng-add": {
+      "description": "A schematic to add bootstrap components and libraries to Angular project.",
+      "factory": "./bootstrap-schematics/index#bootstrapSchematics",
+      "aliases": [
+        "install"
+      ],
+      "schema": "./bootstrap-schematics/schema.json"
+    },
+    "bootstrap": {
+      "description": "A schematic to add bootstrap.",
+      "factory": "./bootstrap-schematics/index#bootstrapSchematics"
+    },
+    "font-awesome": {
+      "description": "A schematic to add FontAwesome.",
+      "factory": "./font-awesome/index#fontAwesome"
+    },
+    "oidc": {
+      "description": "A schematic adding oidc features.",
+      "factory": "./oidc/index#oidc"
+    },
+    "transloco": {
+      "description": "A schematic adding transloco.",
+      "factory": "./transloco/index#transloco"
+    },
+    "spinner": {
+      "description": "A schematic to add ngx-spinner.",
+      "factory": "./spinner/index#spinner"
+    },
+    "cypress": {
+      "description": "A schematic adding cypress.",
+      "factory": "./cypress/index#cypress"
+    }
+  }
+}

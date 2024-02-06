@@ -1,0 +1,23 @@
+{
+  "app_hostname": "localhost",
+  "app_env": "",
+  "app_api": "http://localhost:9180/api/",
+  "oidc": {
+    
+    },
+    "signingKeys": [
+      {
+        "kty": "RSA",
+        "use": "sig",
+        "alg": "RS256",
+        "kid": "shy8J9jZbpxutB24BXs7X1YlFdk",
+        "x5t": "shy8J9jZbpxutB24BXs7X1YlFdk",
+        "n": "nW39Qfnbhy0-2ixe_NnPqU4nPknUVTrR-v1rVP3EDpavRMsJaNoQu9oaUR_jRg8BuQzYJYMoWF_G6_mOOeAN7lh9ZxCNL6Eb_plOrfuObgqNijBgwAiGTtbxLfdxuDVR6AL27OVKywI9Px5QkRzSSpdnZImg71MfZrIvXx5KS5goeaXmix-cpNNkSQjszU398ua-b_JuRhIuIke6WFBl00iHSqndtYBfFu-0GtGMNV8eN1N_ZyXypiDgyWZ1fCCXF5d9-8mPuQbiOJaxIf8p5KLwqSCq8LspLrtblzeM0LJfhC9tHwQdz4Md8IOlcnXes6h5kvD_tQbGK2fc58bvTw",
+        "e": "AQAB",
+        "x5c": [
+          "MIIC8DCCAdigAwIBAgIQOfjaJQCsVIRM9xR15vHONDANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylBREZTIFNpZ25pbmcgLSBzc3Bwcm8wMi5vcmxlYW5zc3J2LmRvbXNtYTAeFw0yMDA4MjAwOTQ1MjlaFw0yMzA4MjAwOTQ1MjlaMDQxMjAwBgNVBAMTKUFERlMgU2lnbmluZyAtIHNzcHBybzAyLm9ybGVhbnNzcnYuZG9tc21hMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnW39Qfnbhy0+2ixe\/NnPqU4nPknUVTrR+v1rVP3EDpavRMsJaNoQu9oaUR\/jRg8BuQzYJYMoWF\/G6\/mOOeAN7lh9ZxCNL6Eb\/plOrfuObgqNijBgwAiGTtbxLfdxuDVR6AL27OVKywI9Px5QkRzSSpdnZImg71MfZrIvXx5KS5goeaXmix+cpNNkSQjszU398ua+b\/JuRhIuIke6WFBl00iHSqndtYBfFu+0GtGMNV8eN1N\/ZyXypiDgyWZ1fCCXF5d9+8mPuQbiOJaxIf8p5KLwqSCq8LspLrtblzeM0LJfhC9tHwQdz4Md8IOlcnXes6h5kvD\/tQbGK2fc58bvTwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBDrQyiLcjsYoLtO0THuL76uU2ngBs3wZg5dku\/OnnnPietR87ydxcQD0wmPNoestSau1gDwnCrWvDQNChTkAN\/jhTqOjypzr+M7TmdYmkkDmHyHkA0Ixn\/qxn8R1PzwubDTQOh5tTjBI6bsAgZuLOf75gX2bge\/keeFyWA2UIZYfJfSbxr7x9ZCQvab6j7i3egA2EW+bNIDuT89x1NonXXIv8YikqwHZrlfBc+3TzJBWjpC3fjsHTV63FgA1NWUMgAPJKsmq4rKtaXmPY0dGSLOzz0oWS0zIHTwXpqxFydZ4btMPlCYDJ4vjX1EWQXFPtatl2i7QtGgpq3FzZAhT5u"
+        ]
+      }
+    ]
+  }
+}

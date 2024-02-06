@@ -1,0 +1,67 @@
+{
+  "name": "ng-bootstrap-schematics",
+  "version": "4.0.2",
+  "description": "Angular schematics for bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aboudard/ng-bootstrap-schematics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aboudard/ng-bootstrap-schematics/issues"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json --watch",
+    "link:schematic": "npm link && cd sandbox && npm link ng-bootstrap-schematics",
+    "sandbox:ng-add": "cd sandbox && ng g ng-bootstrap-schematics:ng-add",
+    "sandbox:spinner": "cd sandbox && ng g ng-bootstrap-schematics:spinner",
+    "sandbox:bootstrap": "cd sandbox && ng g ng-bootstrap-schematics:bootstrap",
+    "sandbox:fa": "cd sandbox && ng g ng-bootstrap-schematics:font-awesome",
+    "sandbox:oidc": "cd sandbox && ng g ng-bootstrap-schematics:oidc",
+    "sandbox:transloco": "cd sandbox && ng g ng-bootstrap-schematics:transloco",
+    "sandbox:cypress": "cd sandbox && ng g ng-bootstrap-schematics:cypress",
+    "clean": "git checkout HEAD -- sandbox && git clean -f -d sandbox",
+    "buildschematics": "npm run build && npm run link:schematic && npm run clean && npm run sandbox:ng-add",
+    "buildschematics:sp": "npm run build && npm run link:schematic && npm run clean && npm run sandbox:spinner",
+    "buildschematics:fa": "npm run build && npm run link:schematic && npm run clean && npm run sandbox:fa",
+    "buildschematics:oidc": "npm run build && npm run link:schematic && npm run clean && npm run sandbox:oidc",
+    "buildschematics:transloco": "npm run build && npm run link:schematic && npm run clean && npm run sandbox:transloco",
+    "buildschematics:cypress": "npm run build && npm run link:schematic && npm run clean && npm run sandbox:cypress",
+    "buildschematics:boot": "npm run build && npm run link:schematic && npm run clean && npm run sandbox:bootstrap",
+    "test": "npm run clean && npm run sandbox:ng-add && npm run test:sandbox",
+    "test:unit": "npm run build && jasmine src/**/*_spec.js",
+    "test:sandbox": "cd sandbox && npm run lint && npm run test && npm run build",
+    "publishpackage": "npm run build && npm publish"
+  },
+  "keywords": [
+    "schematics",
+    "angular",
+    "bootstrap"
+  ],
+  "author": "A12666",
+  "files": [
+    "src"
+  ],
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^12.2.13",
+    "@angular-devkit/schematics": "^12.2.13",
+    "@fortawesome/angular-fontawesome": "0.9.0",
+    "@ngneat/transloco": "3.0.6",
+    "@schematics/angular": "12.2.13",
+    "cheerio": "1.0.0-rc.10",
+    "typescript": "~4.3.2",
+    "ngx-spinner": "12.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/cheerio": "0.22.30",
+    "@types/jasmine": "~3.8.0",
+    "@types/node": "^12.11.1",
+    "jasmine": "^3.5.0",
+    "tslint": "6.1.3"
+  }
+}

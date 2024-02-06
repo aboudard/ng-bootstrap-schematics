@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "AngularBootstrapNgAdd",
+    "title": "Bootstrap Install Schema",
+    "type": "object",
+    "properties": {
+        "removeStyles": {
+            "description": "When true, removes the default syles.css in root folder",
+            "type": "boolean",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "default": true
+        },
+        "replaceAppTemplate": {
+            "description": "When true, replaces the app.component and adds other components",
+            "type": "boolean",
+            "default": true
+        },
+        "installFontAwesome": {
+            "description": "When true, installs font awesome and minimal config",
+            "type": "boolean",
+            "default": true
+        },
+        "installSpinner": {
+            "description": "When true, installs ngx-spinner and minimal config",
+            "type": "boolean",
+            "default": true
+        },
+        "installOidc": {
+            "description": "When true, installs ng-oidc and minimal config",
+            "type": "boolean",
+            "default": true
+        },
+        "project": {
+            "type": "string",
+            "description": "The name of the project.",
+            "$default": {
+                "$source": "projectName"
+            }
+        }
+    },
+    "required": []
+}
